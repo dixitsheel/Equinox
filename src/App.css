@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+body{
+  background-color: whitesmoke;
+}
+.cont{
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*navbar*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav{
+  position: relative;
+  background-color: rgb(63, 81, 180);
+  height: 2.5em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bell{
+  position: absolute;
   color: white;
+  margin-left: 92%;
+}
+.logout{
+  position: absolute;
+  color: white;
+  margin-left: 96%;
+}
+/*options*/
+.options{
+  position: absolute;
+  height: 33.5em;
+  width: 15%;
+  background-color: white;
+}
+.image{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 15px;
+  background-color: red;
+}
+img{
+  border-radius: 50%;
+}
+.option-heading{
+  padding-left: 31%;
+  padding-top: 70px;
+}
+.img-text{
+  font-size: 9px;
+  padding-left: 33%;
+  padding-top: ;
+}
+/*stats-div*/
+.numbers{
+  position: relative;
+  margin-left: 17%;
+  margin-top: 1.5em;
+  height: 5em;
+}
+/*budget*/
+.budget{
+   height: 100%;
+   width: 23%;
+   position: absolute;
+   background-color: white;
+}
+.budget-name{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.dollar{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 7px;
+}
+.arrow-down{
+  position: absolute;
+  color: red;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 55px;
+}
+.budget-stat{
+  position: absolute;
+  font-size: 10px;
+  margin-left: 22px;
+  margin-top: 52px;
+}
+/*total-users*/
+.total-users{
+   height: 100%;
+   width: 23%;
+   position: absolute;
+   margin-left: 25%;
+   background-color: white;
+}
+.arrow-up{
+  position: absolute;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 55px;
+}
+/*tasks-progress*/
+.tasks-progress{
+   height: 100%;
+   width: 23%;
+   position: absolute;
+   margin-left: 50%;
+   background-color: white;
+}
+.line{
+  position: relative;
+  height: 3px;
+  width: 95%;
+  margin-left: 7px;
+  margin-top: 58px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.line-blue{
+  position: absolute;
+  height: 100%;
+  width: 75.5%;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+}
+/*total-profit*/
+.total-profit{
+   height: 100%;
+   width: 23%;
+   position: absolute;
+   margin-left: 75%;
+   color: white;
+   background-color: rgb(63, 81, 180);
+}
+/*latest-sales*/
+.latest-sales{
+  position: absolute;
+  height: 18em;
+  width: 60.5%;
+  margin-top: 1.5em;
+  margin-left: 17.1%;
+  background-color: white;
+}
+.latest-sales-text, .users-by-device-text{
+   position: absolute;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.dropdown-text{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 88%;
+  font-size: 10px;
+  font-weight: 500;
+}
+.dropdown{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 96.5%;
+}
+.line-light{
+  position: absolute;
+  height: 3px;
+  width: 97%;
+  margin-left: 7px;
+  margin-top: 4.5%;
+  border-radius: 10px;
+  background-color: rgb(250, 250, 250);
+}
+ul{
+  position: absolute;
+  list-style: none;
+  padding-left: 1.5%;
+  margin-top: 40px;
+}
+li{
+  padding-bottom: 22px;
+  font-size: 7px;
+}
+.blue-vertical-1{
+  position: absolute;
+  height: 116px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+  margin-top: 123px;
+  margin-left: 10%;
+}
+.grey-vertical-1{
+  position: absolute;
+  height: 73px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(228, 226, 226);
+  margin-top: 166px;
+  margin-left: 11%;
+}
+.blue-vertical-2{
+  position: absolute;
+  height: 33px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+  margin-top: 206px;
+  margin-left: 25%;
+}
+.grey-vertical-2{
+  position: absolute;
+  height: 130px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(228, 226, 226);
+  margin-top: 109px;
+  margin-left: 26%;
+}
+.blue-vertical-3{
+  position: absolute;
+  height: 124px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+  margin-top: 115px;
+  margin-left: 40.3%;
+}
+.grey-vertical-3{
+  position: absolute;
+  height: 70px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(228, 226, 226);
+  margin-top: 168px;
+  margin-left: 41.3%;
+}
+.blue-vertical-4{
+  position: absolute;
+  height: 175px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+  margin-top: 64px;
+  margin-left: 55.4%;
+}
+.grey-vertical-4{
+  position: absolute;
+  height: 190px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(228, 226, 226);
+  margin-top: 49px;
+  margin-left: 56.4%;
+}
+.blue-vertical-5{
+  position: absolute;
+  height: 180px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+  margin-top: 59px;
+  margin-left: 70.5%;
+}
+.grey-vertical-5{
+  position: absolute;
+  height: 185px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(228, 226, 226);
+  margin-top: 54px;
+  margin-left: 71.5%;
+}
+.blue-vertical-6{
+   position: absolute;
+  height: 116px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(63, 81, 180);
+  margin-top: 123px;
+  margin-left: 85.6%;
+}
+.grey-vertical-6{
+  position: absolute;
+  height: 161px;
+  width: 6px;
+  border-radius: 10px;
+  background-color: rgb(228, 226, 226);
+  margin-top: 78px;
+  margin-left: 86.6%;
+}
+.date-div{
+  position: absolute; 
+  padding-top: 235px;
+  padding-left: 25px;
+}
+.date-1{
+  font-size: 7px;
+  display: inline-block;
+  padding-left: 48px;
+}
+.date{
+  font-size: 7px;
+  display: inline-block;
+  padding-left: 99px;
+  
+}
+.overview{
+  position: absolute;
+  color: rgb(63, 81, 180);
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 265px;
+  margin-left: 90%;
+}
+.dropright{
+  position: absolute;
+  margin-top: 265px;
+  margin-left: 97%;
+  transform: rotate(-90deg);
 }
 
-.App-link {
-  color: #61dafb;
+/*users by device*/
+.users-by-device{
+  height: 18em;
+  width: 19.1%;
+  margin-top: 1.5em;
+  margin-left: 79.2%;
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.refresh{
+  font-size: 10px;
+  margin-left: 92%;
+}
+.line-light-2{
+  position: absolute;
+  height: 3px;
+  width: 18%;
+  margin-left: 7px;
+  margin-top: 0.7%;
+  border-radius: 10px;
+  background-color: rgb(250, 250, 250);
 }
